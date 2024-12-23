@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Input Nama Resep -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:text="Nama Resep"
+            android:textColor="#0B0A0A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_recipe_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Nama Resep"
+            android:inputType="text"
+            android:textColor="#0B0A0A"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp" />
+
+        <!-- Input Bahan-Bahan -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#462819"
+            android:text="Bahan"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp" />
+
+        <EditText
+            android:id="@+id/et_ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Bahan-Bahan"
+            android:inputType="textMultiLine"
+            android:textColor="#0B0A0A"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:minLines="5"
+            android:gravity="top" />
+
+        <!-- Input Langkah-Langkah -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#462819"
+            android:text="Langkah-Langkah"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="4dp" />
+
+        <EditText
+            android:id="@+id/et_steps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Langkah-Langkah"
+            android:inputType="textMultiLine"
+            android:textColor="#0B0A0A"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:minLines="5"
+            android:gravity="top" />
+
+        <!-- Tombol Simpan -->
+        <Button
+            android:id="@+id/btn_save_recipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan Resep"
+            android:backgroundTint="#FF9933"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
+
+        <!-- Tombol Kembali -->
+        <Button
+            android:id="@+id/btn_backHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#4CAF50"
+            android:text="Kembali"
+            android:textStyle="bold"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

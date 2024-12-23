@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFF9F2">
+
+    <!-- Sub Judul untuk Nama Resep -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Resep"
+        android:textColor="#462819"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:paddingBottom="8dp" />
+
+    <!-- Nama Resep -->
+    <TextView
+        android:id="@+id/tv_recipe_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"
+        android:textColor="#121010"
+        android:textSize="16sp" />
+
+    <!-- Sub Judul untuk Bahan -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#462819"
+        android:text="Bahan"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tv_ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"
+        android:textColor="#121010"
+        android:textSize="16sp" />
+
+    <!-- Sub Judul untuk Langkah-Langkah -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#462819"
+        android:text="Langkah-Langkah"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tv_steps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"
+        android:textColor="#121010"
+        android:textSize="16sp" />
+
+    <!-- Tombol Perbarui -->
+    <Button
+        android:id="@+id/btn_editRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Perbarui Resep"
+        android:backgroundTint="#FF9933"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:padding="12dp" />
+
+    <!-- Tombol Kembali -->
+    <Button
+        android:id="@+id/btn_backHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:padding="12dp" />
+
+    <!-- Tombol Hapus -->
+    <Button
+        android:id="@+id/btn_delete_recipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hapus Resep"
+        android:backgroundTint="#FF5722"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:padding="12dp" />
+
+</LinearLayout>

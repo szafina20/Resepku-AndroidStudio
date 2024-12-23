@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Sub Judul untuk Nama Resep -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Resep"
+            android:textColor="#121010"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_recipe_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan nama resep"
+            android:inputType="text"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:textColor="#121010"
+            android:textColorHint="#B0B0B0" />
+
+        <!-- Sub Judul untuk Bahan -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bahan"
+            android:textColor="#121010"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan bahan-bahan"
+            android:inputType="textMultiLine"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:textColor="#121010"
+            android:textColorHint="#B0B0B0"
+            android:minLines="3" />
+
+        <!-- Sub Judul untuk Langkah-Langkah -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Langkah-Langkah"
+            android:textColor="#121010"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/et_steps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan langkah-langkah"
+            android:inputType="textMultiLine"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:textColor="#121010"
+            android:textColorHint="#B0B0B0"
+            android:minLines="4" />
+
+        <!-- Tombol Simpan -->
+        <Button
+            android:id="@+id/btn_update_recipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perbarui Resep"
+            android:backgroundTint="#FF9933"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
+
+        <!-- Tombol Kembali -->
+        <Button
+            android:id="@+id/btn_backHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kembali"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#462819"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:padding="12dp" />
+
+        <!-- Tombol Hapus -->
+        <Button
+            android:id="@+id/btn_delete_recipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hapus Resep"
+            android:backgroundTint="#FF5722"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:padding="12dp" />
+    </LinearLayout>
+</ScrollView>
